@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Service>
+    <Header>
+        <ServiceCode>ESS00001</ServiceCode>
+        <ChannelId>C57</ChannelId>
+        <ExternalReference>PMS20120409123456789</ExternalReference>
+        <OriginalChannelId>011</OriginalChannelId>
+        <OriginalReference>20120409123456789</OriginalReference>
+        <RequestTime>20120415112312123</RequestTime>
+        <Version>1.0</Version>
+        <RequestType>0</RequestType>
+        <Encrypt>0</Encrypt>
+        <TradeDate>20120415</TradeDate>
+        <RequestBranchCode>String</RequestBranchCode>
+        <RequestOperatorType>String</RequestOperatorType>
+        <TermType>String</TermType>
+        <TermNo>String</TermNo>
+    </Header>
+    <Body>
+        <Request>
+            <VoucherID>凭证ID</VoucherID>
+            <BusiSysName>业务系统名</BusiSysName>
+            <UniqueCode>EEC43027A0CB57C1</UniqueCode>
+            <SealType>印章类型</SealType>
+            <SealResult>签章结果</SealResult>
+            <EcmBtchNo>影像批次号</EcmBtchNo>
+            <Brno>机构号</Brno>
+            <TxnReference>交易流水号</TxnReference>
+            <CustomerId>客户编号</CustomerId>
+            <AccNo>账号19</AccNo>
+            <ContId>合同编号</ContId>
+            <AmountMin>金额下限</AmountMin>
+            <AmountMax>金额上限</AmountMax>
+            <IdNumber>证件号码</IdNumber>
+            <BeginDate>开始交易日期</BeginDate>
+            <EndDate>截止交易日期</EndDate>
+            <IsDecryptCode>N - 不是；Y-是加密，缺省N</IsDecryptCode>
+            <IsShitory>N - 不是查历史表；Y-查历史表</IsShitory>
+            <RepetiveDataOrdinalType>0 - 顺序；1 - 逆序, 根据盖章时间对重复数据进行排序</RepetiveDataOrdinalType>
+            <PageNo10>1</PageNo10>
+            <ReqListNum>5</ReqListNum>
+            <IsRepetive>N - 不重复； Y - 可重复</IsRepetive>            
+            <ReturnDataOrdinalType>0 - 顺序；1 - 逆序,    根据盖章时间对返回数据进行排序</ReturnDataOrdinalType>
+        </Request>
+    </Body>
+</Service>

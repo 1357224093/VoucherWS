@@ -1,0 +1,94 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+<session-factory>
+	<!-- SQL Server 2005 
+	<property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+	<property name="myeclipse.connection.profile">SQL Server 2005</property>
+	<property name="connection.url">jdbc:sqlserver://127.0.0.1:1433;databaseName=esaweb;</property>
+	<property name="connection.username">sa</property>
+	<property name="connection.password">sa</property>
+	<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+	-->
+        
+	<!-- Sybase 数据库配置
+	<property name="dialect">org.hibernate.dialect.SybaseDialect</property>
+	<property name="connection.url">jdbc:sybase:Tds:WUWEIXIONG:5000/esaweb2010?charset=cp936</property>
+	<property name="connection.username">sa</property>
+	<property name="connection.password"></property>
+	<property name="connection.driver_class">com.sybase.jdbc3.jdbc.SybDataSource</property>
+	<property name="myeclipse.connection.profile">Sybase</property>
+	-->
+
+	<!-- 直接连接 Oracle 数据库的配置，请更换以下文件中的 Oracle 专用字段：
+		RootCert.hbm.xml
+		OrgRegistration.hbm.xml
+		OrgInformation.hbm.xml
+		OrgContract.hbm.xml 
+		HtpsForm.hbm.xml
+		Document.hbm.xml
+		Certificate.hbm.xml
+		Agreement.hbm.xml
+		UserImg.hbm.xml
+		SealImg.hbm.xml	
+		中的 Blob 字段的映射
+	<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+	<property name="myeclipse.connection.profile">Oracle</property>
+	<property name="connection.url">jdbc:oracle:thin:@127.0.0.1:1521:orcl</property>
+	<property name="connection.username">subcenters</property>
+	<property name="connection.password">subcenters</property>
+	<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+	 -->
+	
+	
+	<property name="myeclipse.connection.profile">MySQL</property>
+	<property name="connection.url">jdbc:mysql://localhost:3306/apwebpf_sub?useUnicode=true&amp;characterEncoding=UTF-8</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">123456</property>
+	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	<!-- 直接连接 MySQL 数据库的配置
+	<property name="myeclipse.connection.profile">MySQL</property>
+	<property name="connection.url">jdbc:mysql://10.10.58.219:3306/esaweb20160116?useUnicode=true&amp;characterEncoding=UTF-8</property>
+	<property name="connection.username">esaweb</property>
+	<property name="connection.password">esaweb</property>
+	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	 -->
+	<!-- =============== C3P0连接池设定 =================== -->
+	<!-- 使用c3p0连接池  配置连接池提供的供应商-->
+	<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider                                                                                                                                                     </property>
+	<!--在连接池中可用的数据库连接的最少数目 -->
+	<property name="c3p0.min_size">5</property>
+	<!--在连接池中所有数据库连接的最大数目  -->
+	<property name="c3p0.max_size">20</property>
+	<!--设定数据库连接的过期时间,以秒为单位, 如果连接池中的某个数据库连接处于空闲状态的时间超过了timeout时间,就会从连接池中清除-->
+	<property name="c3p0.timeout">120</property>
+	<!--每3000秒检查所有连接池中的空闲连接 以秒为单位-->
+	<property name="c3p0.idle_test_period">3000</property>
+	<!-- 最大的PreparedStatement的数量 -->
+	<property name="hibernate.c3p0.max_statements">100</property>
+	<!-- 当连接池里面的连接用完的时候，C3P0一下获取的新的连接数 -->
+	<property name="hibernate.c3p0.acquire_increment">2</property>
+	<!-- 每次都验证连接是否可用 -->
+	<property name="hibernate.c3p0.validate">true</property>
+
+	<property name="show_sql">true</property>
+	<property name="format_sql">true</property>
+	<property name="jdbc.batch_size">0</property>
+
+	<!-- 厦门银行 -->
+	<mapping resource="com/esa2000/voucher/entity/ReceiptInfo.hbm.xml"/>
+	<mapping resource="com/esa2000/voucher/entity/ReceiptInfoBak.hbm.xml"/>
+	<mapping resource="com/esa2000/voucher/entity/Channel.hbm.xml"/>
+	<mapping resource="com/esa2000/apcore/entity/SealFeatures.hbm.xml"/>
+	<mapping resource="com/esa2000/voucher/entity/SealPosition.hbm.xml"/>
+	<mapping resource="com/esa2000/voucher/entity/VoucherSetting.hbm.xml"/>
+	
+</session-factory>
+
+</hibernate-configuration>

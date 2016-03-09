@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Service>
+	<Header>
+		<ServiceCode>ACPG000840</ServiceCode>
+		<ChannelId>E00</ChannelId>
+		<ExternalReference>ICOP2015090300017666015</ExternalReference>
+		<OriginalChannelId></OriginalChannelId>
+		<OriginalReference></OriginalReference>
+		<RequestTime>20150903164841607</RequestTime>
+		<TradeDate>20150903</TradeDate>
+		<Version>1.0</Version>
+		<RequestBranchCode>CN0010001</RequestBranchCode>
+		<RequestOperatorId>FB.ICOP.X01</RequestOperatorId>
+		<RequestOperatorType>0</RequestOperatorType>
+		<TermType>00000</TermType>
+		<TermNo>0000000000</TermNo>
+		<RequestType>0</RequestType>
+		<Encrypt>0</Encrypt>
+	</Header>
+	<Body>
+		<Request>
+			<VoucherID></VoucherID>
+			<BusiSysName></BusiSysName>
+			<UniqueCode>EEC43027A0CB57C1</UniqueCode>
+			<SealType></SealType>
+			<SealResult></SealResult>
+			<EcmBtchNo></EcmBtchNo>
+			<Brno></Brno>
+			<TxnReference></TxnReference>
+			<CustomerId></CustomerId>
+			<AccNo></AccNo>
+			<ContId></ContId>
+			<AmountMin></AmountMin>
+			<AmountMax></AmountMax>
+			<IdNumber></IdNumber>
+			<BeginDate>20160114</BeginDate>
+			<EndDate>20160229</EndDate>
+			<IsDecryptCode></IsDecryptCode>
+			<IsHistory>N</IsHistory>
+			<RepetiveDataOrdinalType>1</RepetiveDataOrdinalType>
+			<IsRepetive>Y</IsRepetive>
+			<ReqListNum>16</ReqListNum>
+			<PageNo10>1</PageNo10>
+			<ReturnDataOrdinalType>1</ReturnDataOrdinalType>
+		</Request>
+	</Body>
+</Service>

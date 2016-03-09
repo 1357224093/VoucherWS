@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Service>
+    <Header>
+        <ServiceCode>ESS00001</ServiceCode>
+        <ChannelId>C57</ChannelId>
+        <ExternalReference>PMS20120409123456789</ExternalReference>
+        <OriginalChannelId>011</OriginalChannelId>
+        <OriginalReference>20120409123456789</OriginalReference>
+        <RequestTime>20120415112312123</RequestTime>
+        <Version>1.0</Version>
+        <RequestType>0</RequestType>
+        <Encrypt>0</Encrypt>
+        <TradeDate>20120415</TradeDate>
+        <RequestBranchCode>String</RequestBranchCode>
+        <RequestOperatorType>String</RequestOperatorType>
+        <TermType>String</TermType>
+        <TermNo>String</TermNo>
+    </Header>
+    <Body>
+        <Request>
+            <VoucherID></VoucherID>
+            <BusiSysName></BusiSysName>
+            <UniqueCode></UniqueCode>
+            <SealType></SealType>
+            <SealResult></SealResult>
+            <EcmBtchNo></EcmBtchNo>
+            <Brno></Brno>
+            <TxnReference></TxnReference>
+            <CustomerId></CustomerId>
+            <AccNo></AccNo>
+            <ContId></ContId>
+            <AmountMin></AmountMin>
+            <AmountMax></AmountMax>
+            <IdNumber></IdNumber>
+            <BeginDate></BeginDate>
+            <EndDate></EndDate>
+            <IsDecryptCode>N</IsDecryptCode>
+            <IsShitory>N</IsShitory>
+            <RepetiveDataOrdinalType>0</RepetiveDataOrdinalType>
+            <PageNo10>1</PageNo10>
+            <ReqListNum>200</ReqListNum>
+            <IsRepetive>N</IsRepetive>            
+            <ReturnDataOrdinalType>0</ReturnDataOrdinalType>
+        </Request>
+    </Body>
+</Service>
